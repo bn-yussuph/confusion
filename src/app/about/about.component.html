@@ -63,7 +63,7 @@
 			</div>
 		</div>
 
-		<div fxFlex>
+		<div fxFlex *ngIf="leaders">
 			<div>
 				<h2>Corporate Leadership</h2>
 				<md-list>
@@ -76,5 +76,8 @@
 				</md-list>
 			</div>
 		</div>
+	<div [hidden]="leader">
+		<md-spinner></md-spinner><h4>Loading . . . Please Wait</h4>
+	</div>
 
 </div>
